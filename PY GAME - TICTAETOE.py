@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
 
 
 from IPython.display import clear_output
@@ -25,7 +21,7 @@ test_board =['  '] * 10
 display_board(test_board) 
 
 
-# In[4]:
+
 
 
 def player_input(): 
@@ -46,7 +42,7 @@ def player_input():
     return ('Player1 picks-> '+ Player1, Player2 + ' <- Player2')
 
 
-# In[5]:
+
 
 
 def place_marker(board, marker, postion):    
@@ -54,7 +50,6 @@ def place_marker(board, marker, postion):
     board[postion] = marker
 
 
-# In[6]:
 
 
 def win_check(board, mark):
@@ -80,7 +75,6 @@ def win_check(board, mark):
     return False
 
 
-# In[7]:
 
 
 import random
@@ -93,13 +87,11 @@ def choose_first():
     
 
 
-# In[16]:
 
 
 choose_first()
 
 
-# In[8]:
 
 
 def space_check(board, position):
@@ -121,10 +113,9 @@ def full_board_check(board):
         return True
 
 
-# In[10]:
 
 
-#next postion
+
 def player_choice(board):
     x = 0
     while x not in range(1,10):
@@ -135,7 +126,6 @@ def player_choice(board):
         return False 
 
 
-# In[11]:
 
 
 def replay():
@@ -144,7 +134,6 @@ def replay():
     return PlayAgain == 'y'
 
 
-# In[ ]:
 
 
 print('WELCOME TO A GAME OF TIC TAE TOE')
