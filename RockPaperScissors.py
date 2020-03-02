@@ -1,4 +1,5 @@
 #A Game of Rock, Paper, Scissors played against computer
+#Author - Babawale Okare
 from random import randint
 
 player = input('Select rock, paper or scissors (lowercase) ? ')
